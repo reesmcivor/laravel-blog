@@ -14,12 +14,11 @@ class GroupsPackageServiceProvider extends ServiceProvider
             $this->publishes([
                 __DIR__ . '/../publish/config' => base_path('config'),
                 __DIR__ . '/../database/migrations' => class_exists('Stancl\Tenancy\TenancyServiceProvider') ? database_path('migrations/tenant') : database_path('migrations'),
-                __DIR__ . '/../publish/tests' => base_path('tests/Blog'),
-            ], 'laravel-blog');
+                __DIR__ . '/../publish/tests' => base_path('tests/Groups'),
+            ], 'laravel-groups');
         }
 
-        $this->loadRoutesFrom(__DIR__.'/routes/api.php');
-        $this->loadViewsFrom(__DIR__.'/resources/views', 'blog');
+        $this->loadViewsFrom(__DIR__.'/resources/views', 'laravel-groups');
     }
 
     private function modulePath($path)
