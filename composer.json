@@ -1,6 +1,6 @@
 {
-    "name": "reesmcivor/laravel-tags",
-    "description": "Laravel Tags",
+    "name": "reesmcivor/laravel-label",
+    "description": "Laravel Labels",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -15,14 +15,14 @@
     },
     "autoload": {
         "psr-4": {
-            "ReesMcIvor\\Tags\\": "src/",
-            "ReesMcIvor\\Tags\\Database\\Factories\\": "database/factories/"
+            "ReesMcIvor\\Labels\\": "src/",
+            "ReesMcIvor\\Labels\\Database\\Factories\\": "database/factories/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "ReesMcIvor\\Tags\\TagsPackageServiceProvider"
+                "ReesMcIvor\\Labels\\LabelsPackageServiceProvider"
             ]
         }
     },

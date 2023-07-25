@@ -1,14 +1,14 @@
 <?php
 
-namespace ReesMcIvor\Tags\Database\Factories;
+namespace ReesMcIvor\Labels\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use ReesMcIvor\Tags\Models\Tag;
+use ReesMcIvor\Labels\Models\Label;
 
-class TagFactory extends Factory
+class LabelFactory extends Factory
 {
 
-    protected $model = Tag::class;
+    protected $model = Label::class;
 
     public function definition() : array
     {

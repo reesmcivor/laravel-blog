@@ -8,7 +8,7 @@ return new class extends Migration
 {
     public function up()
     {
-        Schema::create('tags', function (Blueprint $table) {
+        Schema::create('labels', function (Blueprint $table) {
             $table->id();
             $table->string('name');
             $table->softDeletes();
@@ -17,6 +17,6 @@ return new class extends Migration
     }
     public function down()
     {
-        Schema::dropIfExists('tags');
+        Schema::dropIfExists('labels');
     }
 };
