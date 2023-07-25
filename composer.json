@@ -1,5 +1,5 @@
 {
-    "name": "reesmcivor/laravel-blog",
+    "name": "reesmcivor/laravel-groups",
     "description": "Laravel Blog",
     "type": "library",
     "license": "MIT",
@@ -15,14 +15,14 @@
     },
     "autoload": {
         "psr-4": {
-            "ReesMcIvor\\Blog\\": "src/",
-            "ReesMcIvor\\Blog\\Database\\Factories\\": "database/factories/"
+            "ReesMcIvor\\Groups\\": "src/",
+            "ReesMcIvor\\Groups\\Database\\Factories\\": "database/factories/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "ReesMcIvor\\Blog\\BlogPackageServiceProvider"
+                "ReesMcIvor\\Groups\\GroupsPackageServiceProvider"
             ]
         }
     },
