@@ -5,7 +5,7 @@ namespace ReesMcIvor\SlotKeeper;
 use Illuminate\Support\ServiceProvider;
 use ReesMcIvor\SlotKeeper\Console\Commands\ReleaseSlotKeepers;
 
-class BlogPackageServiceProvider extends ServiceProvider
+class GroupsPackageServiceProvider extends ServiceProvider
 {
     protected $namespace = 'ReesMcIvor\Blog\Http\Controllers';
 
