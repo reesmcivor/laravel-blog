@@ -1,9 +1,8 @@
 <?php
 
-namespace ReesMcIvor\SlotKeeper;
+namespace ReesMcIvor\Groups;
 
 use Illuminate\Support\ServiceProvider;
-use ReesMcIvor\SlotKeeper\Console\Commands\ReleaseSlotKeepers;
 
 class GroupsPackageServiceProvider extends ServiceProvider
 {
