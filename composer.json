@@ -1,6 +1,6 @@
 {
     "name": "reesmcivor/laravel-groups",
-    "description": "Laravel Blog",
+    "description": "Laravel Groups",
     "type": "library",
     "license": "MIT",
     "authors": [
