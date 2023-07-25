@@ -1,6 +1,6 @@
 {
-    "name": "reesmcivor/laravel-groups",
-    "description": "Laravel Groups",
+    "name": "reesmcivor/laravel-tags",
+    "description": "Laravel Tags",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -15,14 +15,14 @@
     },
     "autoload": {
         "psr-4": {
-            "ReesMcIvor\\Groups\\": "src/",
-            "ReesMcIvor\\Groups\\Database\\Factories\\": "database/factories/"
+            "ReesMcIvor\\Tags\\": "src/",
+            "ReesMcIvor\\Tags\\Database\\Factories\\": "database/factories/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "ReesMcIvor\\Groups\\GroupsPackageServiceProvider"
+                "ReesMcIvor\\Tags\\TagsPackageServiceProvider"
             ]
         }
     },

@@ -8,17 +8,17 @@ return new class extends Migration
 {
     public function up()
     {
-        Schema::create('groupables', function (Blueprint $table) {
+        Schema::create('taggables', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('group_id');
-            $table->unsignedBigInteger('groupable_id');
-            $table->string('groupable_type');
+            $table->unsignedBigInteger('tag_id');
+            $table->unsignedBigInteger('taggable_id');
+            $table->string('taggable_type');
             $table->timestamps();
-            $table->index(['groupable_id', 'groupable_type']);
+            $table->index(['taggable_id', 'taggable_type']);
         });
     }
     public function down()
     {
-        Schema::dropIfExists('groupables');
+        Schema::dropIfExists('taggables');
     }
 };

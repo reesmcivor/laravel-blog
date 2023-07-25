@@ -1,17 +1,17 @@
 <?php
 
-namespace ReesMcIvor\Groups\Models;
+namespace ReesMcIvor\Tags\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use ReesMcIvor\Groups\Database\Factories\GroupFactory;
+use ReesMcIvor\Tags\Database\Factories\TagFactory;
 
-class Group extends Model
+class Tag extends Model
 {
     use HasFactory;
 
     protected static function newFactory()
     {
-        return new GroupFactory();
+        return new TagFactory();
     }
 }
