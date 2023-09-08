@@ -16,4 +16,14 @@ class Label extends Model
     {
         return new LabelFactory();
     }
+
+    public function parent()
+    {
+        return $this->belongsTo(Label::class, 'parent_id');
+    }
+
+    public function children()
+    {
+        return $this->hasMany(Label::class, 'parent_id');
+    }
 }

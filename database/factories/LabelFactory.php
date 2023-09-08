@@ -13,7 +13,6 @@ class LabelFactory extends Factory
     public function definition() : array
     {
         return [
-            'id' => 1,
             'name' => $this->faker->name,
         ];
     }
