@@ -26,4 +26,16 @@ class Label extends Model
     {
         return $this->hasMany(Label::class, 'parent_id');
     }
+
+    public function allChildren()
+    {
+        return $this->children()->with('allChildren');
+    }
+
+    public function getAllDescendantsAttribute()
+    {
+        return $this->allChildren->flatMap(function ($child) {
+            return [$child, $child->all_descendants];
+        });
+    }
 }
